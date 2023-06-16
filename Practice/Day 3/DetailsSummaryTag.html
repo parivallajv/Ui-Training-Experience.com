@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Summary Tag</title>
+</head>
+<body>
+    <style>
+        table,tr,td,th{
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px 10px;
+            width: 600px;
+            text-align: center;
+            
+        }
+        table{
+            
+            background-color: aqua;
+        }
+        details{
+            margin-top: 30px;
+            margin-left: 40px;
+            background-color: bisque;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+    <details>
+        <summary>Google</summary>
+        <a href="https://www.google.com">www.google.com</a>
+    </details>
+    <details>
+        <summary>Fruits List</summary>
+        <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <ul style="list-style-type: disc;">
+                <li>Morris</li>
+            </ul>
+        </ul>
+    </details>
+    <details>
+        <summary>Lorem</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum optio molestiae tenetur ut non! In voluptatem commodi et eius possimus. Maiores nostrum totam quo similique id ullam cumque eveniet corrupti.</p>
+    </details>
+    <details>
+        <summary>Time Table</summary>
+        <table>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                
+                <td>Eng</td>
+                <td>mat</td>
+                <td>Sci</td>
+                <td>Tam</td>
+                <td>Soc</td>
+            </tr>
+            <tr>
+                <td>Sci</td>
+                <td>Tam</td>
+                <td>Eng</td>
+                <td>mat</td>
+                <td>Soc</td>
+            </tr>
+            <tr>
+                <td colspan="2">Sci</td>
+                
+                <td>mat</td>
+                <td rowspan="3">Tam</td>
+                
+                <td>Soc</td>
+            </tr>
+            <tr>
+                <td>Sci</td>
+                <td>Tam</td>
+                <td>mat</td>
+                <td>Eng</td>
+               
+                <td>Soc</td>
+            </tr>
+            <tr>
+                
+                <td>Tam</td>
+                <td>Eng</td>
+                <td>Sci</td>
+                <td>mat</td>
+                <td>Soc</td>
+            </tr>
+        </table>
+    </details>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+img{
+    width: 40px;
+}
+#main-container{
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    margin: 1% 30%;
+    border: 0.5px solid lightblue;
+    
+}
+#logo-links{
+    background-color: rgb(236, 236, 236);
+    height: 60px;
+    padding-top: 20px;
+    
+}
+.input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightblue;
+    height: 80px;
+    width: 50%;
+}
+#register-btn{
+    background-color: rgb(35, 95, 235);
+    border: none;
+    height: 40px;
+    width: 80px;
+    color: white;
+    margin: 50px 0px;
+}
+body{
+    background-color: rgb(234, 231, 231);
+}
+.logo{
+    margin: 0px 20px;
+    border-radius: 30px;
+}
+input:active{
+    border: none;
+}
+h2{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+  #gender{
+    width: 40%;
+  }
+  input:focus{
+    outline: none;
+  }

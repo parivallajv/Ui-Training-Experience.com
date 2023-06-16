@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div id="main-container">
+    <form action="POST" target="_top">
+        <h2>Register</h2>
+        <div id="logo-links">
+       <a href="https:www.google.com"><img src="../Image/google-logo-9824.png" alt="google-logo" class="logo"></a>
+           <a href="https://www.linkedin.com"><img src="../Image/LinkedIn_icon_circle.svg" alt="fb-logo" class="logo"></a>
+           <a href="https://www.facebook.com/"><img src="../Image/logo-facebookpng-32202.png" alt="" class="logo"></a>
+           <a href="https://www.github.com"><img src="/Practice/Image/512x512-logo-27148.png" alt="" class="logo"></a>
+        </div>
+        <input type="text" name="name" class="input" placeholder="Username" required="" maxlength="10" minlength="5"> <br>
+        
+        <input type="email" name="email" class="input" placeholder="Email" required=""> <br>
+
+        <input type="date" name="dateOfBirth" id="" class="input" placeholder="DateOfBirth" > <br>
+
+        <!-- <input list="genders" name="gender" id="" class="input" placeholder="Gender">
+        <datalist id="genders">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </datalist> <br> -->
+
+        <!-- <input list="genders" name="gender" id="gender" class="inut" placeholder="Gender"> -->
+        <select id="genders" class="input" placeholder="Gender">
+            <option value="Male" >Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select> <br>
+
+        <input type="password" name="Password" class="input" placeholder="Password" required minlength="6" maxlength="10"> <br>
+        
+        <input type="password" name="conf-password" class="input" placeholder="Confirm Password" required minlength="6" maxlength="10"> <br>
+
+        <!-- <input type="checkbox" name="" id="" class="input">Privacy & Settings <br> -->
+        
+        <button type="submit" id="register-btn">Register</button>
+
+    </form>
+</div>
+</body>
+</html>
