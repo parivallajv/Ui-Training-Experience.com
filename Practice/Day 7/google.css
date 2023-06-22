@@ -43,7 +43,7 @@ body{
 
 .material-symbols-outlined {
   color: rgb(119, 118, 118);
-  top: 50px;
+  /* top: 50px; */
 }
 .material-symbols-outlined :hover{
     background-color: rgb(184, 183, 183);
@@ -65,14 +65,57 @@ body{
 #btn-signIn:hover{
     background-color: #044dac;
 }
+#main{
+width: 100%;
+text-align: center;
+}
 #google-img{
     height: 92px;
     width: 272px;
     margin-top: 180px;
 }
-#main{
-width: 100%;
-text-align: center;
+#search-logo{
+   margin-left: -70px;
+    margin-top: 12px;
+    opacity: .5;
+
+}
+#search-inp{
+    width: 80%;
+    height: 40px;
+    margin-top: 3px;
+    vertical-align: top;
+    margin: 0px auto;
+    outline: none;
+    border: none;
+    
+}
+#search-div{
+    outline: none;
+    text-align: center;
+    padding-top: 5px;
+    justify-content: center;
+    border: .5px solid rgb(196, 194, 194);
+    width: 500px;
+    margin: 0px auto;
+    border-radius: 25px;
+    height: 46px;
+}
+#search-div:hover{
+    box-shadow: 3px 3px 5px rgb(239, 238, 238),-3px -3px 5px rgb(239, 238, 238);
+}
+#google-mic{
+    width: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+#google-lens{
+    width: 25px;
+    margin-top: 12px;
+    margin-left: 50px;
+    position: absolute;
+
 }
 #buttons{
     margin-top: 20px;
@@ -149,41 +192,69 @@ text-align: center;
 .foot-link:hover{
     text-decoration: underline;
 }
-#search-logo{
-    margin-left: -520px;
-    margin-top: 13px;
-    opacity: .5;
 
-}
-#search-inp{
-    width: 500px;
-    position: absolute;
-    height: 45px;
-    margin-top: 0px;
-    outline: none;
-    border: none;
-}
-#search-div{
-    left: 100px;
-    border: .5px solid rgb(196, 194, 194);
-    width: 40%;
-    margin-left: 430px;
-    border-radius: 25px;
-    height: 47px;
-}
-#search-div:hover{
-    box-shadow: 3px 3px 5px rgb(239, 238, 238),-3px -3px 5px rgb(239, 238, 238);
-}
-#google-mic{
-    width: 15px;
-    margin-top: 15px;
-    margin-left: 460px;
-    position: absolute;
-}
-#google-lens{
-    width: 25px;
-    margin-top: 12px;
-    margin-left: 490px;
-    position: absolute;
 
+@media screen and (max-width=786px) {
+    #main{
+        padding: 2%;
+        display: flex;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    #header{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    #search-div{
+        margin-left: 20px;
+        width: 80%;
+    }
+    #search-bar{
+        display: flex;
+        width: 80%;
+        margin: 2%;
+        text-align: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    #search-logo{
+        display: flex;
+        width: 80%;
+        text-align: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+    #buttons{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        position: relative;
+    }
+    #foot-1{
+        display: flex;
+        width:80%;
+        text-align: center;
+        width: fit-content;
+        flex-wrap: wrap;
+        text-align: center;
+        position: relative;
+    }
+    #foot-2{
+        display: flex;
+        width:80%; 
+        text-align: center;
+        width: fit-content;
+        position: relative;
+        text-align: center;
+    }
 }
