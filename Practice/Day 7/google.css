@@ -1,0 +1,189 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+}
+#header{
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    text-align: right;
+    line-height: 40px;
+    right: 0px;
+    align-items: right;
+    margin-left: 10px;
+}
+.link-head{
+    text-align: center;
+    position: relative;
+    align-items: center;
+    margin-right: 20px;
+    line-height: 30px;
+    justify-content: center;
+    text-decoration: none;
+    font-size: smaller;
+    color: rgb(54, 53, 53);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.link-head:hover{
+    text-decoration: underline;
+
+}
+#apps-logo{
+   position: absolute;
+   margin-top:25px;
+   right: 150px;
+   color: #70757a;
+}
+
+#apps-logo:hover{
+    background-color: rgb(228, 227, 226);
+    background-size: 10px 10px ;
+    border-radius: 25px;
+}
+
+.material-symbols-outlined {
+  color: rgb(119, 118, 118);
+  top: 50px;
+}
+.material-symbols-outlined :hover{
+    background-color: rgb(184, 183, 183);
+}
+#btn-signIn{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+    padding: 0px 27px 0px 27px;
+    line-height: 40px;
+    font-size: smaller;
+    background-color: #1a73e8;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+#btn-signIn:hover{
+    background-color: #044dac;
+}
+#google-img{
+    height: 92px;
+    width: 272px;
+    margin-top: 180px;
+}
+#main{
+width: 100%;
+text-align: center;
+}
+#buttons{
+    margin-top: 20px;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    margin-left: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    border: .5px solid rgb(226, 226, 226);
+    box-shadow: 1px 1px 1px rgb(227, 227, 227),-1px -1px 1px rgb(221, 220, 220);
+}
+#languages{
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: smaller;
+}
+.lang{
+    text-align: center;
+    padding-left: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 179);
+}
+.lang:hover{
+    text-decoration: underline;
+}
+#foot-1{
+    
+    position: fixed;
+    bottom: 50px;
+    background-color: #f2f2f2;
+    color: #70757a;
+    width: 100%;
+    text-align: left;
+    margin: 0px;
+    margin-left: -8px;
+    padding:20px ;
+    padding-left: 30px;
+    font-size: smaller;
+    border-bottom: 1.5px solid #dadce0;
+}
+
+#foot-2{
+    bottom: 0px;
+    position: fixed;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    
+    text-align: center;
+    color: #70757a;
+
+}
+#left{
+    float: left;
+    width: auto;
+}
+#right{
+    float: right;
+    width: auto;
+}
+.foot-link{
+    padding: 20px;
+    line-height: 50px;
+    font-size: smaller;
+    text-decoration: none;
+    color: rgb(110, 109, 109);
+
+}
+.foot-link:hover{
+    text-decoration: underline;
+}
+#search-logo{
+    margin-left: -520px;
+    margin-top: 13px;
+    opacity: .5;
+
+}
+#search-inp{
+    width: 500px;
+    position: absolute;
+    height: 45px;
+    margin-top: 0px;
+    outline: none;
+    border: none;
+}
+#search-div{
+    left: 100px;
+    border: .5px solid rgb(196, 194, 194);
+    width: 40%;
+    margin-left: 430px;
+    border-radius: 25px;
+    height: 47px;
+}
+#search-div:hover{
+    box-shadow: 3px 3px 5px rgb(239, 238, 238),-3px -3px 5px rgb(239, 238, 238);
+}
+#google-mic{
+    width: 15px;
+    margin-top: 15px;
+    margin-left: 460px;
+    position: absolute;
+}
+#google-lens{
+    width: 25px;
+    margin-top: 12px;
+    margin-left: 490px;
+    position: absolute;
+
+}
