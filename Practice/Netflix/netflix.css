@@ -1,0 +1,272 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    /* background-color: aliceblue; */
+    color: white;
+    position: sticky;
+    top: 0;
+}
+#left{
+    width: 50vw;
+    color: white;
+    display: flex;
+    >img{
+        width: 140px;
+        
+    }
+    
+}
+#left-logo{
+    display: flex;
+}
+#media-link{
+    text-decoration: none;
+    color: white;
+    margin-top: 50px;
+    
+    
+}
+#right{
+    display: flex;
+    color: white;
+    width: 50vw;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    >a{
+        color: white;
+        text-decoration: none;
+    }
+    
+}
+#top-logo{
+    width: 25px;
+    height: 25px;
+    /* margin-top: 30px; */
+    /* align-items: center; */
+}
+.top-right-item{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+main{
+    width: 100vw;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    >p{
+        padding-top: 70px;
+    }
+}
+#page-one{
+    background-image: url(../Image/neon-stream-screen-abstract-animation-background-blue-and-purple-color-free-video.jpg);
+}
+button{
+    background-color: brown;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+}
+#apply-button{
+    background-color: rgb(0, 0, 0,0.1);
+    border-radius: 5px;
+    border: .5px solid grey;
+    
+}
+#page-two{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+.grid-img{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+}
+.grid-item{
+    column-gap: 20px;
+    row-gap: 20px;
+    
+}
+.grid-item:hover{
+    animation-name: poster;
+    /* animation-timing-function: 2s; */
+    animation-duration: 1s;
+}
+
+@keyframes poster {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.04;
+    }
+}
+#input-bar{
+    width: 600px;
+    height: 40px;
+    border: .5px solid grey;
+    border-radius: 3px;
+    margin: 0px auto;
+    >input{
+        outline: none;
+        border: none;
+        width: 550px;
+        vertical-align: top;
+        background-color: rgb(0, 0, 0,0.1);
+        height: 40px;
+        
+        
+    }
+    >img{
+        width: 20px;
+        color: white;
+        filter: invert(1);
+        
+    }
+       
+    
+}
+#page-two-header{
+    
+    width: 100vw;
+    margin-top: -25px;
+    height: 150px;
+    background-color: rgb(33, 32, 32);
+    >p{
+        width: 100vw;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 600;
+    padding: 30px;
+    font-size: 24px;
+    color: white;
+    }
+}
+#page-two-links{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: -20px;
+    flex-wrap: wrap;
+
+}
+.link{
+    border: none;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4e4e4e;
+    margin: 5px 5px;
+}
+
+@media screen and (max-width:700px){
+   
+    #page-two{
+        display: grid;
+        
+        justify-content: center;
+        grid-template-columns: auto ;
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: rgb(60, 62, 63);
+        color: white;
+        position: sticky;
+        top: 0;
+    }
+    #left{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        display: flex;
+        >img{
+            width: 140px;
+            
+        }
+        
+    }
+    #left-logo{
+        display: flex;
+    }
+    #media-link{
+        text-decoration: none;
+        color: white;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    #right{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        /* width: 50vw; */
+        justify-content: space-around;
+        
+        >a{
+            color: white;
+            text-decoration: none;
+        }
+        
+    }
+    #page-two-links{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        flex-wrap: wrap;
+    }
+    #input-bar{
+        width: 60%;
+        height: 40px;
+        border: .5px solid grey;
+        border-radius: 3px;
+        margin: 0px auto;
+        >input{
+            outline: none;
+            border: none;
+            width:90%;
+            vertical-align: top;
+            background-color: rgb(0, 0, 0,0.1);
+            height: 40px;
+            
+            
+        }
+        >img{
+            width: 20px;
+            color: white;
+            filter: invert(1);
+            
+        }
+        main{
+            width: 100vw;
+            height: 400px;
+            margin: 5% auto ;
+            text-align: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: 700;
+            color: white;
+            >p{
+                padding-top: 70px;
+            }
+        }
+           
+        
+    }
+}

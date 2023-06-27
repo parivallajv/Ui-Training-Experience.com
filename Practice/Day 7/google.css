@@ -3,22 +3,19 @@ body{
     margin: 0px;
 }
 #header{
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
     height: 50px;
     text-decoration: none;
-    text-align: right;
     line-height: 40px;
-    right: 0px;
-    align-items: right;
-    margin-left: 10px;
-}
+    }
 .link-head{
     text-align: center;
-    position: relative;
-    align-items: center;
     margin-right: 20px;
     line-height: 30px;
-    justify-content: center;
     text-decoration: none;
     font-size: smaller;
     color: rgb(54, 53, 53);
@@ -26,12 +23,9 @@ body{
 }
 .link-head:hover{
     text-decoration: underline;
-
 }
 #apps-logo{
-   position: absolute;
-   margin-top:25px;
-   right: 150px;
+   
    color: #70757a;
 }
 
@@ -43,15 +37,15 @@ body{
 
 .material-symbols-outlined {
   color: rgb(119, 118, 118);
-  /* top: 50px; */
+  
 }
 .material-symbols-outlined :hover{
     background-color: rgb(184, 183, 183);
 }
 #btn-signIn{
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 20px;
-    margin-left: 80px;
+    margin-left: 30px;
     padding: 0px 27px 0px 27px;
     line-height: 40px;
     font-size: smaller;
@@ -75,7 +69,7 @@ text-align: center;
     margin-top: 180px;
 }
 #search-logo{
-   margin-left: -70px;
+   margin-left: -50px;
     margin-top: 12px;
     opacity: .5;
 
@@ -88,7 +82,6 @@ text-align: center;
     margin: 0px auto;
     outline: none;
     border: none;
-    
 }
 #search-div{
     outline: none;
@@ -107,13 +100,13 @@ text-align: center;
 #google-mic{
     width: 15px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: -10px;
     position: absolute;
 }
 #google-lens{
     width: 25px;
     margin-top: 12px;
-    margin-left: 50px;
+    margin-left: 20px;
     position: absolute;
 
 }
@@ -200,19 +193,23 @@ text-align: center;
         display: flex;
         text-align: center;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         position: relative;
     }
     #header{
-        text-align: center;
+        text-align: right;
         align-items: center;
         display: flex;
-        flex-wrap: wrap;
-        position: relative;
+        flex-direction: row-reverse;
+        /* position: relative; */
+        right: 20px;
     }
     #search-div{
-        margin-left: 20px;
-        width: 80%;
+        /* margin-left: 20px; */
+        display: flex;
+        text-align: center;
+        margin: 0px 5%;
+        width: 100%;
     }
     #search-bar{
         display: flex;
@@ -256,5 +253,12 @@ text-align: center;
         width: fit-content;
         position: relative;
         text-align: center;
+    }
+    #google-img{
+        height: 92px;
+        width: 100%;
+        text-align: center;
+        margin-top: 180px;
+        margin: 0px auto;
     }
 }

@@ -1,0 +1,259 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    
+}
+
+
+
+#header{
+    display: flex;
+    width: 100vw;
+    height: 40px;
+}
+#left{
+    flex-direction: row;
+    width: 20%;
+    justify-content: flex-start;
+}
+#right{
+    width: 80%;
+   flex-direction: row;
+   justify-items: flex-end;
+   text-align: end;
+   line-height: 70px;
+   margin-right: 20px;
+   font-weight: 700;
+   font-size: medium;
+   
+    
+    
+}
+.link{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+#buyNow-btn{
+    padding: 9px 34px;
+    border: none;
+    background-color: #aad236;
+    border-radius: 4px;
+}
+#main{
+    background-image: url(./landing-background.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: bottom;
+    
+    >h2{
+        
+        text-align: center;
+        display: block;
+        width: 100vw;
+        
+       padding-top: 200px;
+        font-size: 44px;
+        letter-spacing: 8.8px;
+        line-height: 1.2; 
+        /* max-width: 1100px; */
+    }
+    >p{
+        color: #8b8b99;
+        display: block;
+        width: 100vw;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 32px;
+    }
+   
+}
+#div-2{
+    display: flex;
+    flex-direction: row;
+}
+#step-1{
+    background-color: #5acda6;
+}
+#step-2{
+    background-color: #91ac41;
+}
+#step-3{
+    background-color: #e4b476;
+}
+#step-4{
+    background-color: #f69dad;
+}
+.step{
+    width: 25%;
+    padding: 112px 48px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    
+}
+.fa-solid {
+    font-size: 96px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color: white;
+
+}
+.step-caption{
+    font-size: 24px;
+    font-weight: 600;
+    
+    
+}
+.step-para{
+    margin-top: 30px;
+    line-height: 1.4;
+}
+.fa-solid:hover {
+  animation-name: steps;
+  
+  animation-duration: 1.5s;
+}
+.fa-brands:hover {
+    animation-name: steps;
+    
+    animation-duration: 1.5s;
+  }
+.fa-brands{
+    font-size: 96px;
+    margin-bottom: 40px;
+    color: white;
+}
+@keyframes steps {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.1;
+    }
+}
+#page-3-item-container{
+    display: flex;
+    justify-content: center;
+}
+.page-3-item{
+    padding: 24px;
+
+    text-align: center;
+    width: 230px;
+    height: 408px;
+    >p{
+        color: #8b8b99;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+    }
+}
+#page-3{
+    background-color: #f7eee2;
+}
+.page-3-logo{
+    padding: 30px;
+    background-color: #e3b375;
+    border-radius: 150px;
+}
+#fresh-food{
+    padding-top: 100px;
+    margin-top: -100px;
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+#vegan-store{
+    font-size: 44px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+#raddish{
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#fresh-food-2{
+    padding-top: 60px;
+    
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1200){
+    #left{
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    #right{
+        width: 100%;
+       flex-direction: column;
+       justify-items: flex-end;
+       
+       line-height: 70px;
+       margin-right: 20px;
+       font-weight: 700;
+       font-size: medium;  
+    }
+    #div-2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#page-4-item-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.page-4-item{
+    background-color: rgb(227, 238, 252);
+    margin: 20px;
+    width: 25%;
+    text-align: center;
+    border-top-left-radius: 25px ;
+    border-top-right-radius: 0px ;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    >img{
+        width: 100px;
+        border-radius: 80px;
+        text-align: center;
+        padding: 20px 70px;
+    }
+    >p{
+        color: #8b8b99;
+        padding: 20px;
+
+    }
+    >caption{
+        color: #8b8b99;
+        
+    }
+}
+#page-4-item-1{
+    height: 450px;
+}
+#page-4-item-2{
+    height: 420px;
+}
+#page-4-item-3{
+    height: 480px;
+}
+#block{
+    margin-right: 10px;
+}
+#demo1{
+    margin-right: -20px;
+}
