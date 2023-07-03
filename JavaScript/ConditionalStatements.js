@@ -805,3 +805,85 @@
 // }
 // console.log(rev)
 
+// Programs-while loop
+
+// 1. Q1. Write a JavaScript program to find the GCD of two numbers : 15 and 25.
+
+    // var num=25
+    // var num2=15
+    // var i=2;
+    // while(i<num){
+    //     if(num%i==num2%i){
+            
+    //         res=Math.max(num%i)
+            
+    //     }
+    //     i++;
+    // }
+    // console.log('the gcd is '+res)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Q3. Write a JavaScript program to find the number of even values in sequence before 
+// the first occurrence of a given number. [Hint: You can use while loop here] 
+
+// var arr=[1,2,3,4,5,6,7,8,9,10,11,12]
+// var i=8;
+// var count=0
+
+// while(i<=arr.length){
+//     if(i%2==0){
+//         count++
+//     }
+//     i++
+// }
+// console.log(count)
+
+// Q4. Write a JavaScript program to sum the multiples of 3 and 5 under 1000.
+// var i=0
+// sum=0
+// while(i<1000){
+//     if((i%3==0)||(i%5==0)){
+//         // console.log(i)
+//         sum=sum+i
+//     }
+//     i++
+// }
+// console.log(sum)
+
+// Q5. Write a JavaScript program which iterates the integers from 1 to 15. But for 
+// multiples of three print "Fizz" instead of the number and for the multiples of five print 
+// "Buzz". For numbers which are multiples of both three and five print "FizzBuzz". 
+
+// var i=0;
+// while(i<15){
+//     if(i%3==0){
+//         console.log(i+' Fizz')
+//     }
+//     else if(i%5==0){
+//         console.log(i+' Buzz')
+//     }
+//     else{
+//         console.log(i)
+//     }
+//     i++;
+// }

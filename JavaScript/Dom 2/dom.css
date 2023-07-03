@@ -1,0 +1,19 @@
+div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    margin: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+p{
+    
+    position: absolute;
+    font-size: 1000px;
+}
