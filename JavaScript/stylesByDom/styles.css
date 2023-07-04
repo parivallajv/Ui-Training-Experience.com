@@ -1,0 +1,95 @@
+/* 1. For Changing Font Size */
+
+#text{
+    background-color: lightgoldenrodyellow;
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+}
+
+body{
+    margin: 0;
+}
+.button{
+    width: 140px;
+    margin-left: 30px;
+    height: 40px;
+}
+.big{
+    font-size: 40px;
+}
+.small{
+    font-size: 20px;
+}
+#ToggleFontSize{
+    padding: 15px;
+    text-align: center;
+    background-image: url(/Ui-training/Ui-Training-Experience.com/JavaScript/Dom/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-image: linear-gradient(violet,skyblue);
+    margin-top: -20px;
+    height: 120px;
+    /* line-height: 50px; */
+    font-size: large;
+    >button{
+        border: 0px;
+        border-radius: 5px;
+        background-color: rgb(219, 218, 218);
+    }
+}
+
+#ChangeFontSize{
+    width: 100%;
+    margin-top: 20px;
+    height: 100px;
+    text-align: center;
+    background-image: linear-gradient(orange,red);
+    padding: 20px;
+    >button{
+        border: 0px;
+        border-radius: 5px;
+        background-color: rgb(219, 218, 218);
+    }
+}
+
+/* 2. SideBar */
+#menu-logo{
+    width: 40px;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(20px);
+    animation-name: show;
+    animation-duration: 1s;
+    
+}
+@keyframes show {
+        0%{
+            transform: translateX(-150px);
+        }
+        100%{
+            transform: translateX(20px);
+        }
+    }
+.menu-item{
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid green;
+    width: 100px;
+    margin-top: 20px;
+}
+.hide{
+    display: flex;
+    flex-direction: column;  
+    transform: translateX(-150px);
+    animation-name: hide;
+    animation-duration: 1s;
+}
+@keyframes hide {
+        0%{
+            transform: translateX(20px);
+        }
+        100%{
+            transform: translateX(-150px);
+        }
+    }
