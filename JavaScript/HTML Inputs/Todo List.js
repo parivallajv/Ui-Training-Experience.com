@@ -14,6 +14,8 @@ var deleteItem=document.getElementById('delete-btn')
 
 var nameInp=document.getElementById('inp-name')
 
+var inpNode=document.createTextNode(nameInp)
+
 var list=document.getElementById('list')
 
 // 2. Function for add Item
@@ -26,25 +28,45 @@ addItem.addEventListener('click',function(){
     else{
     
     var newListItem=document.createElement('li')
-
     var editLogo=document.createElement('img')
     editLogo.src='./file-edit-icon.png'
     editLogo.classList.add('edit-logo')
-    console.log(editLogo)
 
     var deleteLogo=document.createElement('img')
     deleteLogo.src='./pngwing.com (1).png'
     deleteLogo.classList.add('delete-logo')
 
-    console.log(editLogo)
-    console.log(deleteLogo)
-
     var textNode=document.createTextNode(nameInp.value)
 
     newListItem.className="item"
     
+    newListItem.id="item "+(listContainer.childElementCount+1)
 
-    newListItem.id="item "+listContainer.childElementCount
+    let x=newListItem.id;
+    deleteLogo.onclick=function(){
+        var y=document.getElementById(x);
+        var parent = y.parentElement;
+        parent.removeChild(y);
+    }
+
+    editLogo.onclick=function(){
+        console.log('editLogo is presses')
+        var y=document.getElementById(x);
+        var parent = y.parentElement;
+        parent.removeChild(y);
+        console.log(parent.y)
+        var newListItem=document.createElement('li')
+        var textNode=document.createTextNode(nameInp.value)
+        newListItem.className="item"
+        newListItem.id="item "+(listContainer.childElementCount+1)
+        newListItem.appendChild(textNode)
+        newListItem.appendChild(editLogo)
+        newListItem.appendChild(deleteLogo)
+        list.appendChild(newListItem)
+        
+        
+        // console.log(updatedVal)
+    }
 
     newListItem.appendChild(textNode)
     newListItem.appendChild(editLogo)
@@ -96,24 +118,24 @@ deleteItem.addEventListener('click',function(){
 
 
 
-var deleteKey=document.querySelector(".delete-logo:last-child")
-console.log(deleteKey)
-
-var position=document.getElementById()
-
-var item2=document.getElementById('item-2')
-
-// var deleteKey=document.querySelector(`.delete-logo:${}`)
-
+// var deleteKey=document.querySelector(".delete-logo:last-child")
 // console.log(deleteKey)
 
-deleteKey.addEventListener('click',function(){
+// var position=document.getElementById()
+
+// var item2=document.getElementById('item-2')
+
+// // var deleteKey=document.querySelector(`.delete-logo:${}`)
+
+// // console.log(deleteKey)
+
+// deleteKey.addEventListener('click',function(){
    
-    console.log(deleteKey)
+//     console.log(deleteKey)
 
-    item2.remove();
+//     item2.remove();
 
-})
+// })
 
 
 

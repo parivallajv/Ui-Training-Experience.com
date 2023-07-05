@@ -75,6 +75,8 @@
         var delbtn = document.createElement("button");
         delbtn.innerText = "Delete";
         var textnode = document.createTextNode(inputText);
+
+        // For Delete Function in rows
         newelement.id = "item" + (todolist.childElementCount + 1);
         let x = newelement.id;
         delbtn.onclick = function () {
@@ -82,6 +84,16 @@
           var parent = y.parentElement;
           parent.removeChild(y);
         };
+
+        // For updating elements in list
+        newelement.id = "item" + (todolist.childElementCount + 1);
+        
+        delbtn.onclick = function () {
+          var y = document.getElementById(x);
+          var parent = y.parentElement;
+          parent.removeChild(y);
+        };
+
         newelement.appendChild(textnode);
         newelement.appendChild(delbtn);
         todolist.appendChild(newelement);
