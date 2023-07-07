@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h2>This is constructor</h2>
+
+<script>
+   
+//    Constrctor and prototype
+   var person={
+    name:'parivallal',
+    yearOfBirth:2000,
+    place:'virudhai',
+   }
+   function Person(pName,pYearOfBirth,pPlace){
+    this.name=pName;
+    this.yearOfBirth=pYearOfBirth;
+    this.place=pPlace
+
+   }
+
+   Person.prototype.calculateAge=function(){
+    console.log(2023-this.yearOfBirth)
+   }
+   Person.prototype.lastName="cisco"
+
+   var person2=new Person('willSmith',1982,'mexico')
+   var person3=new Person('rock',1980,'newYork')
+   var person4=new Person('D',1988,'chennai')
+
+//    console.log(person3)
+//    console.log(Person2)
+//    console.log(person4.place)
+   person4.calculateAge()
+   console.log(person4.yearOfBirth)
+   console.log(person4)
+   
+   person3.name="rockforest"
+   console.log(person3.name)
+
+
+
+
+
+</script>
+</body>
+</html>
