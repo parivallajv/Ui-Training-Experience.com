@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Crud Operations</title>
+</head>
+<body>
+    <div id="table">
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();">
+                        <input type="number" placeholder="Product Code" id="productCode">
+                        <input type="text" placeholder="Product Name" id="productName">
+                        <input type="number" placeholder="Qty" id="qty">
+                        <input type="number" placeholder="Price" id="price">
+                        <div>
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                    </form>
+                
+                <td>
+                    <table id="data-table">
+                        <thead>
+                            <tr>
+                            <th>Product Code</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            </tr>
+                        </thead>
+                        </tr>
+                        <tbody>
+                        
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+            </tr>
+        </table>
+    </div>
+    <script src="./script2.js"></script>
+</body>
+</html>
