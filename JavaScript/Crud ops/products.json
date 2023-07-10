@@ -1,0 +1,42 @@
+[{
+    "ProductCode":1,
+    "ProductName":"Apple",
+    "Quantity":2,
+    "Price":150
+},
+{
+    "ProductCode":2,
+    "ProductName":"Orange",
+    "Quantity":1,
+    "Price":80  
+},
+{
+    "ProductCode":3,
+    "ProductName":"Grapes",
+    "Quantity":50,
+    "Price":120  
+},
+{
+    "ProductCode":4,
+    "ProductName":"Banana",
+    "Quantity":3,
+    "Price":50  
+},
+{
+    "ProductCode":5,
+    "ProductName":"Guava",
+    "Quantity":4,
+    "Price":60  
+},
+{
+    "ProductCode":6,
+    "ProductName":"Jackfruit",
+    "Quantity":1,
+    "Price":300  
+},
+{
+    "ProductCode":7,
+    "ProductName":"Pine Apple",
+    "Quantity":5,
+    "Price":200  
+}]

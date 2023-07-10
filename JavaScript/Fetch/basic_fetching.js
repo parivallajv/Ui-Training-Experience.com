@@ -6,7 +6,7 @@ fetch(url)
     return res.json()
 })
 // .then(res=>res.json())
-.then(data=>console.log(data[0].name))
+.then(data=>console.log(data[1]))
 .catch(err=>console.warn(err.message))
 
 // 2. this is normal function and it is always fail

@@ -85,8 +85,58 @@ function validate(){
     return isValid;
 }
 
+
+
 function prevData(){
-    fetch('./products.json')
+    // 1. to fetch a data BY Using fetch api
+
+    fetch('products.json')
     .then(res=>res.json())
-    .then(data=>console.log(data))
+    .then(json =>{
+        json.forEach(item=>{
+
+            var table=document.getElementById('dataTable').getElementsByTagName('tbody')[0]
+            var newRow=table.insertRow(table.length)
+            var cell1=newRow.insertCell(0)
+                cell1.innerText=`${item.ProductCode}`
+            var cell2=newRow.insertCell(1)
+                cell2.innerHTML=`${item.ProductName}`
+            var cell3=newRow.insertCell(2)
+                cell3.innerHTML=`${item.Quantity}`
+            var cell4=newRow.insertCell(3)
+                cell4.innerHTML=`${item.Price}`
+            var cell5=newRow.insertCell(4)
+                cell5.innerHTML=`<button onClick='onEdit(this)'>Edit</button> <button onClick='onDelete(this)'>Delete</button>` 
+        }
+        )
+    }
+    )
+
+    // 1. to fetch a data BY Using XMLHTTPRequest
+
+        // let xhr= new XMLHttpRequest();
+        // xhr.open("GET",'./products.json',true)
+
+        // xhr.send()
+        // xhr.onload = function(){
+        //     console.log(xhr.responseText)
+        // }
+    
+
+    // 2. to POST a data
+        
+    //     fetch('https://reqres.in/api/users/2',{
+    //     method:"POST",
+    //     body:JSON.stringify({
+    //         "ProductCode":8,
+    //         "ProductName":"Boomer",
+    //         "Quantity":10,
+    //         "Price":10
+    //     }),
+    //     // headers: {
+    //     //     "Content-type": "application/json; charset=UTF-8"
+    //     // }
+    // })
+    // .then(res=>res.json())
+    // .then(data=>console.log(data))
 }
