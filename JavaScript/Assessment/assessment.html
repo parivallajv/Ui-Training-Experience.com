@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="stylesheet" href="./assessment.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div id="sidebar">
+        <img src="./gmail-google-logo-rebrand-workspace-design_dezeen_2364_col_0.webp" alt="">
+        <div id="compose">
+            <span class="material-symbols-rounded">
+                edit
+                </span>
+            <button onclick="onCompose()">Compose</button>
+        </div>
+        <div id="post-box" class="post-box">
+            <input type="text" placeholder="Enter Updated Title" id="post-title"> <br>
+            <input type="text" placeholder="Enter Updated Body" id="post-body"> <br>
+            <input type="submit" name="" id="sub-compose" placeholder="POST" onclick="onPost()">
+        </div>
+       
+        <div id="titles">
+            <div class="label-div">
+                <span class="material-symbols-rounded">inbox</span>
+                <a href="">Inbox</a>
+            </div>
+            <div class="label-div">
+                <span class="material-symbols-sharp">star</span>
+                <a href="">Starred</a>
+            </div>
+            <div class="label-div">
+                <span class="material-symbols-sharp">schedule</span>
+                <a href="">Snoozed</a>
+            </div>
+            <div class="label-div">
+                <span class="material-symbols-sharp">send</span>
+                <a href="">Sent</a>
+            </div>
+            <div class="label-div">
+                <span class="material-symbols-sharp">draft</span>
+                <a href="">Draft</a>
+                
+            </div>
+            <div class="label-div">
+                <span class="material-symbols-sharp">expand_more</span>
+                <a href="">More</a>
+            </div>          
+        </div>
+    </div>
+    <div id="topBar">
+        <div id="searchBar">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Search in mail">
+            <span class="material-symbols-outlined">
+            tune
+            </span> 
+        </div>
+        <span class="material-symbols-outlined help-logo" >help</span>
+        <span class="material-symbols-outlined help-logo" >settings</span>
+        <span class="material-symbols-outlined help-logo" >apps</span>
+        <img src="./logo.png" alt="" id="exp-logo">
+    </div>
+    <div id="headers">
+        <button onclick="postDiv()" class="head-btn" id="p-btn">Posts</button>
+        <button onclick="todosDiv()" class="head-btn" id="t-btn">Todos</button>
+        <button onclick="usersDiv()" class="head-btn" id="u-btn">Users</button>
+    </div>
+        <div id="list-1" class="list"></div>
+        <div id="list-2" class="list hide"></div>
+        <div id="list-3" class="list hide"></div>
+    <script src="./assessment.js"></script>
+    <!-- <script src="./fetchPost.js"></script> -->
+    <!-- <script src="./fetchTodo.js"></script> -->
+    <!-- <script src="./fetchUsers.js"></script> -->
+</body>
+</html>
