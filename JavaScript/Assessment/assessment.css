@@ -1,0 +1,226 @@
+#sidebar{
+    width: 200px;
+    float: left;
+    /* border: 1px solid grey; */
+    >img{
+        width: 120px;
+        margin-left: 20px;
+    }
+    
+    
+}
+body{
+    background-color: #f2f2f2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    
+}
+#compose{
+    padding-top: 8px;
+    padding-left: 15px;
+    border-radius: 10px;
+    height: 50px;
+    width: 60%;
+    line-height: 70px;
+    margin-left: 20px;
+    background-color: #c2e7fe;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    >input{
+        border: none;
+        background-color: #c2e7fe;
+        width: 60%;
+        margin-top: -14px;
+        color: black;
+        margin-left: 10px;
+        outline: none;
+    }
+    >button{
+        background-color: #c2e7fe;
+        border: none;
+    }
+}
+.material-symbols-rounded{
+    color: black;
+    font-weight: 600;
+}
+.label-div{
+    width: 120%;
+    height: 30px;
+
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    >a{
+        text-decoration: none;
+        color: grey;
+        margin-left: 20px;
+        line-height: 5px;
+    }
+}
+#titles{
+    margin-top: 20px;
+}
+#topBar{
+    width: auto;
+    margin-left: 250px;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+
+}
+#searchBar{
+    width: 720px;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #eaf1fb;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border: 0.5px solid grey;
+    box-shadow: 1px 1px 1px grey,-1px -1px 1px grey;
+    >input{
+        width: 88%;
+        height: 80%;
+        border: none;
+        background-color: #eaf1fb;
+        padding-left: 20px;
+        font-size: medium;
+        outline: none;
+    }
+    
+}
+.list{
+    margin-top: 20px;
+    width: 78%;
+    
+    margin-left: 240px;
+    >#list-1{
+        list-style-type: none;
+    }
+}
+.list-item{
+    background-color: #eaf1fb;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+#buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #c2e7fe;
+}
+#headers{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #c2e7fe; */
+    >button{
+        margin: 0px auto;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        /* border: 0.5px solid grey; */
+        /* border-bottom:3px solid rgb(37, 102, 112); */
+        
+    }
+}
+
+.show{
+    display: block;
+    /* background-color: #1c77af; */
+}
+.hide{
+    display: none;
+}
+.bg-blue{
+    background-color: #c2e7fe;
+    border: none;
+    border-bottom:3px solid rgb(37, 102, 112);
+    border-radius: 10px;
+}
+#post-btn{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: silver;
+    border: none;
+}
+.post-box{
+    display: none;
+}
+#post-box{
+    position: fixed;
+    right: -5px;
+    bottom: -5px;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 9px;
+    border: 4px solid steelblue;
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green,5px 5px black;
+    /* border-left: 10px solid rgb(98, 98, 98); */
+    /* border-top: 30px solid black; */
+
+    >#post-title{
+        margin-top: 10px;
+        width: 470px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-left: 10px;
+        height: 40px;
+    }
+    >#post-body{
+        display: flex;
+
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 460px;
+        height: 375px;
+    }
+    >#sub-compose{
+        margin-left: 400px;
+        width: 80px;
+        height: 30px;
+    }
+}
+.help-logo{
+    padding:0px 20px;
+    margin-top: 20px;
+    font-size: 50px;
+}
+#exp-logo{
+    width: 120px;
+    margin-left: 70px;
+    align-items:baseline;
+    border: 1px solid grey;
+    padding: 2px 20px;
+    border-radius: 10px;
+}
+div.list{
+    >th{
+        width: 200px;
+    }
+    
+}
+.title-color{
+    background-color: #c2e7fe;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    text-align: center;
+}

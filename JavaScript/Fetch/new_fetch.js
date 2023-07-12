@@ -28,6 +28,10 @@ fetch("https://fakestoreapi.com/products")
       var titlespan = document.createElement("span");
       titlespan.append(`${obj.title}   `);
       div.appendChild(titlespan);
+      var titleInput = document.createElement('input');
+      titleInput.type = 'text';
+      titleInput.value = obj.title;
+      div.appendChild(titleInput);
       div.append(obj.price);
       var image = document.createElement('img');
       image.src = obj.image;
@@ -35,6 +39,7 @@ fetch("https://fakestoreapi.com/products")
       image.style.height = "200px";
       image.classList.add('image');
       div.appendChild(image);
+
       var delButton = document.createElement('button');
       delButton.innerHTML = "Delete";
       delButton.classList.add('btn-area');
@@ -43,9 +48,28 @@ fetch("https://fakestoreapi.com/products")
         newArr = newArr.filter(item => item.pId !== obj.pId); // Remove product from newArr array
         container.removeChild(div); // Remove DOM element
       });
+      
       var editButton = document.createElement('button');
       editButton.innerHTML = "Edit";
       editButton.classList.add('btn-area');
       div.appendChild(editButton);
+      editButton.addEventListener('click', () => {
+        obj.title = titleInput.value; // Update the title with the new value from the input field
+        titlespan.textContent = `${obj.title}   `; // Update the displayed title in the DOM
+      });
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
