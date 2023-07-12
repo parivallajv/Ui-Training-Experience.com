@@ -52,7 +52,7 @@ function onEdit(td) {
     document.getElementById("city").value = selectedRow.cells[3].innerHTML;
 }
 function updateRecord(formData) {
-    selectedRow.cells[0].innerHTML = formData.  fullName;
+    selectedRow.cells[0].innerHTML = formData.fullName;
     selectedRow.cells[1].innerHTML = formData.email;
     selectedRow.cells[2].innerHTML = formData.salary;
     selectedRow.cells[3].innerHTML = formData.city;
