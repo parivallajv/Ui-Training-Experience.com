@@ -1,27 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REst and spread Operator</title>
-</head>
-<body>
+  </head>
+  <body>
+    <script>
+      // 1. rest Operator
 
-<script>
-    var a=["apple","orange","grapes"]
-    var b=['a','b','c']
+      // var a=["apple","orange","grapes"]
+      // var b=['a','b','c']
 
-    var c=[a,...b]
-    // console.log(c);
+      // var c=[a,...b]
+      // // console.log(c);
 
-    name="anbbd"
-    id=65
+      // name="anbbd"
+      // id=65
 
-    call(name,id)
+      // call(name,id)
 
-    function call(...h){
-        console.log(name,id)
-    }
-</script>    
-</body>
+      // function call(...h){
+      //     console.log(name,id)
+      // }
+
+      // 2. destructing
+
+      // var arr=[1,2,3]
+      // console.log(arr);
+      // console.log(arr[2]);
+      // var [num1,num2,num3]=[1,2,3]
+      // console.log(num3);
+
+      // var name="pari vallal jothilingam"
+
+      // var newArr=name.split(" ")
+      // console.log(newArr);
+
+      // var[firstname,MiddleName,LastName]=newArr
+
+      // console.log(firstname);
+      // console.log(LastName);
+
+      // const person={
+      //     name:"parivallal",
+      //     age:22,
+      //     area:"chennai"
+      // }
+
+      // var {name, area}=person
+
+      // console.log(area);
+
+      // let firstName="pari"
+      // let lastName="jothilingam"
+
+      // var person={
+      //     firstName,
+      //     lastName
+      // }
+
+      // console.log(firstName);
+
+      var arr = [1, 2, 3, 4, 5];
+
+      // var newArr=[]
+
+      // for(let i=0;i<arr.length;i++){
+      //     newArr.push(arr[i]*3)
+      // }
+      // console.log(newArr);
+
+      //     var newArr2=[]
+      //     const doublevalue=new(item)=>{
+      //         return item
+      //     }
+      //     console.log(doublevalue);
+
+      // 3. Find()
+
+      //     const person=
+      //     [
+      //     {
+      //         firstname:"pari",
+      //         age:22,
+      //         place:"chennai"
+      //     },
+      //     {
+      //         firstname:"vallal",
+      //         age:23,
+      //         place:"madurai"
+      //     }
+      //     ,
+      //     {
+      //         firstname:"cedric",
+      //         age:5,
+      //         place:"china"
+      //     }
+      // ]
+
+      // res=person.find((data)=>{
+      //    return data.place==="chennai"
+      // })
+
+      // console.log(res);
+
+      // 4. Map()
+
+      // var num=[1,2,3,4,5]
+
+      // var res=num.map(function(data){
+      //     return data*2
+      // })
+
+      // console.log(res);
+
+      //     var person=[
+      //         {id:1,name:"pari",place:"chennai"},
+      //         {id:2,name:"vallal",place:'madurai'},
+      //         {id:3,name:"cedric",place:"china"}
+      // ]
+
+      //     var res=person.map(function(val1,val2){
+      //         return [val1.name,val1.place].join(" ")
+      //     })
+
+      //     console.log(res);
+
+      // 5. reduce()
+
+      // const values=[243,43545,46,65,5]
+
+      // var res=values.reduce(function(preVal,curVal){
+      //     return preVal-curVal
+      // })
+      // console.log(res);
+
+    //   const sales = [
+    //     {
+    //       id: 1,
+    //       product: "tv",
+    //       sale: 200,
+    //     },
+    //     {
+    //       id: 2,
+    //       product: "mic",
+    //       sale: 500,
+    //     },
+    //     {
+    //       id: 3,
+    //       product: "mobile",
+    //       sale: 10,
+    //     },
+    //   ];
+
+    //   var res = sales.reduce(function (accumulator, count) {
+    //     return accumulator + count.sale;
+    //   }, 100);
+
+    //   console.log(res);
+
+    // 6. Filter
+
+    // var marks=[54,4,56,77,68]
+
+    // var res=marks.filter((value)=>{
+    //     return value>=35
+    // })
+
+    // console.log(res);
+
+//     var students=[
+//         {
+//             id:1,
+//             name:"parivallal",
+//             marks:67
+//         },
+//         {
+//             id:2,
+//             name:"vallal",
+//             marks:56
+//         },
+//         {
+//             id:3,
+//             name:"cedric",
+//             marks:24
+//         }
+//     ]
+
+// var res=students.filter((mark)=>
+// {
+//     return mark.marks>35
+// })
+
+// console.log("the passed students are : ",res[1]);
+
+
+
+
+
+
+    </script>
+  </body>
 </html>

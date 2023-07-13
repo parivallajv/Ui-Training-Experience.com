@@ -102,17 +102,16 @@ function update1(id){
   while (listId) {
     console.log("update");
     if (listId.innerHTML.startsWith(`${id}`)){
+      console.log('upadtehjvjnmvm')
         var inp1=document.getElementById(`inT${id}`)
         inp1.classList.toggle('hide')
                 
         var inp2=document.getElementById(`inB${id}`)
         inp2.classList.toggle('hide')
-      
     }
+    break; 
+  }
 }
-}
-
-
 
 // 3. OnEdit function
   
@@ -152,15 +151,20 @@ function onEdit(id) {
                 listItem2.innerHTML=upTitle;
                 listItem3.innerHTML=upBody;
 
+                var inp1=document.getElementById(`inT${id}`)
+                inp1.classList.toggle('hide')
                 
-  
+                var inp2=document.getElementById(`inB${id}`)
+                inp2.classList.toggle('hide')
+              
                 break;
+              
               }
-              listId = listId.parentElement.nextElementSibling.querySelector('td:first-child');
-             
-            }
-          } 
-      )
+
+              listId = listId.parentElement.nextElementSibling.querySelector('td:first-child');         
+        }
+      } 
+    )
   }
   
 // 4. onPost function
@@ -170,6 +174,7 @@ function onPost(){
     fetch('https://jsonplaceholder.typicode.com/posts',{
       method:'POST'
     })
+  
     .then(res=>{
       if(res.status==200){
         res.json()
