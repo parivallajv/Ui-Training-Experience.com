@@ -6,9 +6,18 @@
     <title>dropDown</title>
 </head>
 <body>
+
+    <input type="text" id="sample" value="jkdbfjk">
+
+
+
     <label >Animals</label>
-    <select name="animal" class="selector" onchange="changeImg(id)"></select>
+    <select name="animal" class="selector" onchange="changeImg(this.value)"></select>
 
     <script src="./dropdown.js"></script>
 </body>
+<script>
+    let x=document.getElementById('sample')
+    console.log(x.value);
+</script>
 </html>

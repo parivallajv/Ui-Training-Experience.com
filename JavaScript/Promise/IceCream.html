@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+</head>
+<body>
+
+    <script>
+
+        let stocks = {
+            Fruits : ["strawberry", "grapes", "banana", "apple"],
+            liquid : ["water", "ice"],
+            holder : ["cone", "cup", "stick"],
+            toppings : ["chocolate", "peanuts"],
+        };
+
+        Fruit_name=stocks.Fruits[2];
+
+        // 1. order placed
+        let order=(Fruit_name,call_Production,Container,toppings)=>{
+
+            setTimeout(function(){
+                console.log(`${stocks.Fruits[Fruit_name]} flavour selected`);
+            production(Container,toppings)
+        },2000)
+
+        }
+
+        // 2. Production started
+        let production=(Container,toppings)=>{
+
+            setTimeout(()=>{
+            console.log("production has started");
+            
+            setTimeout(()=>{
+                console.log("the fruit has been chopped");
+
+                setTimeout(()=>{
+                    console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} added`);
+
+                    setTimeout(()=>{
+                        console.log("machine started");
+
+                        setTimeout(()=>{
+                            console.log(`${stocks.holder[Container]} selected for container`);
+
+                            setTimeout(()=>{
+                                console.log(`${stocks.toppings[toppings]} selected for toppings`);
+
+                                setTimeout(()=>{
+                                    console.log(`ice cream was served`);
+                                },2000)
+
+                            },3000)
+
+                        },2000)
+
+                    },1000)
+
+                },1000)
+
+            },2000)
+
+        },0)
+
+        }
+    
+
+        order(2,production,0,0)
+    </script>
+</body>
+</html>
